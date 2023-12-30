@@ -46,7 +46,7 @@ system_is_container: false
 # Root by default is not used unless setup by user
 # The role will only run certain commands if set to true
 # This allows the ability to skip tasks that may cause an issue
-ubtu22cis_uses_root: false
+ubtu22cis_uses_root: true
 
 ###
 ### Settings for associated Audit role using Goss
@@ -588,12 +588,12 @@ ubtu22cis_aide_cron:
 # THIS VARIABLE SHOULD BE CHANGED AND INCORPORATED INTO VAULT
 # THIS VALUE IS WHAT THE ROOT PW WILL BECOME!!!!!!!!
 # HAVING THAT PW EXPOSED IN RAW TEXT IS NOT SECURE!!!!
-ubtu22cis_grub_user: root
-ubtu22cis_set_grub_user_pass: false
-ubtu22cis_grub_user_passwd: '$y$j9T$MBA5l/tQyWifM869nQjsi.$cTy0ConcNjIYOn6Cppo5NAky20osrkRxz4fEWA8xac6'  # Set to changeme
-ubtu22cis_grub_user_file: /etc/grub.d/00_user
-ubtu22cis_bootloader_password_hash: "grub.pbkdf2.sha512.changethispassword"  # pragma: allowlist secret
-ubtu22cis_set_boot_pass: false
+#ubtu22cis_grub_user: root
+#ubtu22cis_set_grub_user_pass: false
+#ubtu22cis_grub_user_passwd: 'changme'  # Set to changeme
+#ubtu22cis_grub_user_file: /etc/grub.d/00_user
+#ubtu22cis_bootloader_password_hash: "grub.pbkdf2.sha512.changethispassword"  # pragma: allowlist secret
+#ubtu22cis_set_boot_pass: false
 
 ubtu22cis_grub_file: /boot/grub/grub.cfg
 
